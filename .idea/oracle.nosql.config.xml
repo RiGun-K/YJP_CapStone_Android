@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ConnectionDataProviderService">
+    <option name="dict">
+      <map>
+        <entry key="/Cloud/COMPARTMENT" value="" />
+        <entry key="/Cloud/Cloud/endpoint" value="" />
+        <entry key="/Cloud/FINGERPRINT" value="" />
+        <entry key="/Cloud/PASSPHRASE" value="" />
+        <entry key="/Cloud/PRIVATEKEY" value="" />
+        <entry key="/Cloud/SDK_PATH" value="" />
+        <entry key="/Cloud/TENANTID" value="" />
+        <entry key="/Cloud/USERID" value="" />
+        <entry key="/Cloudsim/Cloudsim/service-url" value="http://localhost:8080" />
+        <entry key="/Cloudsim/SDK_PATH" value="" />
+        <entry key="/Cloudsim/TENANT_ID" value="exampleId" />
+        <entry key="/Onprem/Onprem/proxy-url" value="" />
+        <entry key="/Onprem/PASSWORD" value="" />
+        <entry key="/Onprem/SDK_PATH" value="" />
+        <entry key="/Onprem/SECURITY" value="SSL" />
+        <entry key="/Onprem/TRUST_STORE" value="" />
+        <entry key="/Onprem/TS_PASSPHRASE" value="" />
+        <entry key="/Onprem/USER_NAME" value="" />
+        <entry key="/profile_type" value="Cloudsim" />
+        <entry key="/show_table/page_size" value="20" />
+      </map>
+    </option>
+  </component>
+</project>

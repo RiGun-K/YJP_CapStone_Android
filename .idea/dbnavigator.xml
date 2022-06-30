@@ -2,7 +2,11 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
+<<<<<<< HEAD
     <value-preview-text-wrapping value="false" />
+=======
+    <value-preview-text-wrapping value="true" />
+>>>>>>> origin/rigun
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -27,6 +31,7 @@
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
+<<<<<<< HEAD
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="34d21d61-db0c-4900-8c17-eb5ecc324ad9">
       <console name="Connection" type="STANDARD" schema="RIGUN" session="Main" />
@@ -41,6 +46,11 @@
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="34d21d61-db0c-4900-8c17-eb5ecc324ad9" dataset="RIGUN.CAMPING" active-filter-id="" />
   </component>
+=======
+  <component name="DBNavigator.Project.DatabaseFileManager">
+    <open-files />
+  </component>
+>>>>>>> origin/rigun
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
@@ -69,6 +79,7 @@
     <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
+<<<<<<< HEAD
     <connections>
       <connection id="34d21d61-db0c-4900-8c17-eb5ecc324ad9" active="true" signed="true">
         <database>
@@ -155,6 +166,9 @@
         </object-filters>
       </connection>
     </connections>
+=======
+    <connections />
+>>>>>>> origin/rigun
     <browser-settings>
       <general>
         <display-mode value="TABBED" />
