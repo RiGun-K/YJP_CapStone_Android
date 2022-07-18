@@ -1,5 +1,7 @@
 package com.example.yjp_capstone.ui;
 
+import androidx.lifecycle.ViewModelProvider;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,22 +12,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.yjp_capstone.databinding.FragmentMainBinding;
-import com.example.yjp_capstone.viewmodel.MainViewModel;
+import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.databinding.FragmentMyBoxBinding;
+import com.example.yjp_capstone.viewmodel.MyBoxViewModel;
 
-public class MainFragment extends Fragment {
-    private FragmentMainBinding binding;
+public class MyBoxFragment extends Fragment {
+    private FragmentMyBoxBinding binding;
+    private MyBoxViewModel mViewModel;
 
-    private MainViewModel mViewModel;
-
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static MyBoxFragment newInstance() {
+        return new MyBoxFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentMainBinding.inflate(inflater,container,false);
+        binding = FragmentMyBoxBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
         return view;
     }
@@ -34,7 +36,6 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
     }
 
     @Override
@@ -42,4 +43,5 @@ public class MainFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }

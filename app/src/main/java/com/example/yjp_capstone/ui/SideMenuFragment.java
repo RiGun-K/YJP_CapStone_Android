@@ -10,22 +10,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.yjp_capstone.databinding.FragmentMainBinding;
-import com.example.yjp_capstone.viewmodel.MainViewModel;
+import com.example.yjp_capstone.databinding.FragmentSideMenuBinding;
+import com.example.yjp_capstone.viewmodel.SideMenuViewModel;
 
-public class MainFragment extends Fragment {
-    private FragmentMainBinding binding;
+public class SideMenuFragment extends Fragment {
+    private FragmentSideMenuBinding binding;
+    private SideMenuViewModel mViewModel;
 
-    private MainViewModel mViewModel;
-
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static SideMenuFragment newInstance() {
+        return new SideMenuFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentMainBinding.inflate(inflater,container,false);
+        binding = FragmentSideMenuBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
         return view;
     }
@@ -34,7 +33,6 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
     }
 
     @Override
@@ -42,4 +40,5 @@ public class MainFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }

@@ -1,5 +1,7 @@
 package com.example.yjp_capstone.ui;
 
+import androidx.lifecycle.ViewModelProvider;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,22 +12,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.yjp_capstone.databinding.FragmentMainBinding;
-import com.example.yjp_capstone.viewmodel.MainViewModel;
+import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.databinding.FragmentMyBoxTimeBinding;
+import com.example.yjp_capstone.viewmodel.MyBoxTimeViewModel;
 
-public class MainFragment extends Fragment {
-    private FragmentMainBinding binding;
+public class MyBoxTimeFragment extends Fragment {
+    private FragmentMyBoxTimeBinding binding;
+    private MyBoxTimeViewModel mViewModel;
 
-    private MainViewModel mViewModel;
-
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static MyBoxTimeFragment newInstance() {
+        return new MyBoxTimeFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentMainBinding.inflate(inflater,container,false);
+        binding = FragmentMyBoxTimeBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
         return view;
     }
@@ -33,7 +35,6 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
     }
 

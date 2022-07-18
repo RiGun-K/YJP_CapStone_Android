@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
 
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.yjp_capstone.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sideMenuFragment"
+        android:name="com.example.yjp_capstone.ui.SideMenuFragment"
+        android:label="fragment_side_menu"
+        tools:layout="@layout/fragment_side_menu" >
+        <action
+            android:id="@+id/action_sideMenuFragment_to_myPageFragment"
+            app:destination="@id/myPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPageFragment"
+        android:name="com.example.yjp_capstone.ui.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" >
+        <action
+            android:id="@+id/action_myPageFragment_to_myBoxFragment"
+            app:destination="@id/myBoxFragment" />
+        <action
+            android:id="@+id/action_myPageFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBoxFragment"
+        android:name="com.example.yjp_capstone.ui.MyBoxFragment"
+        android:label="fragment_my_box"
+        tools:layout="@layout/fragment_my_box" >
+        <action
+            android:id="@+id/action_myBoxFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_myBoxFragment_to_myBoxMenuFragment"
+            app:destination="@id/myBoxMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBoxMenuFragment"
+        android:name="com.example.yjp_capstone.ui.MyBoxMenuFragment"
+        android:label="fragment_my_box_menu"
+        tools:layout="@layout/fragment_my_box_menu" >
+        <action
+            android:id="@+id/action_myBoxMenuFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_myBoxMenuFragment_to_myBoxItemFragment"
+            app:destination="@id/myBoxItemFragment" />
+        <action
+            android:id="@+id/action_myBoxMenuFragment_to_myBoxPositionFragment"
+            app:destination="@id/myBoxPositionFragment" />
+        <action
+            android:id="@+id/action_myBoxMenuFragment_to_myBoxTimeFragment"
+            app:destination="@id/myBoxTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBoxItemFragment"
+        android:name="com.example.yjp_capstone.ui.MyBoxItemFragment"
+        android:label="fragment_my_box_item"
+        tools:layout="@layout/fragment_my_box_item" >
+        <action
+            android:id="@+id/action_myBoxItemFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBoxPositionFragment"
+        android:name="com.example.yjp_capstone.ui.MyBoxPositionFragment"
+        android:label="fragment_my_box_position"
+        tools:layout="@layout/fragment_my_box_position" >
+        <action
+            android:id="@+id/action_myBoxPositionFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBoxTimeFragment"
+        android:name="com.example.yjp_capstone.ui.MyBoxTimeFragment"
+        android:label="fragment_my_box_time"
+        tools:layout="@layout/fragment_my_box_time" >
+        <action
+            android:id="@+id/action_myBoxTimeFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
 </navigation>
