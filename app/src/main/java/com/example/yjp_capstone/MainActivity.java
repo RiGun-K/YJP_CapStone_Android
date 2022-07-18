@@ -3,6 +3,8 @@ package com.example.yjp_capstone;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 import com.example.yjp_capstone.api.ApiController;
 import com.example.yjp_capstone.databinding.ActivityMainBinding;
@@ -16,13 +18,14 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
-
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(binding.getRoot());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
         Gson gson = new GsonBuilder().setLenient().create();
 
@@ -32,6 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         retrofit.create(ApiController.class);
-
+        Log.d("RESPONSE", "test");
     }
 }

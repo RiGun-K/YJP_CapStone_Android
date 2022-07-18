@@ -35,12 +35,12 @@
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/sideBar"
+                android:id="@+id/closeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
-                android:src="@drawable/ic_menu"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>

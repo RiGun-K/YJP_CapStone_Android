@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_sideMenuFragment_to_myPageFragment"
             app:destination="@id/myPageFragment" />
+        <action
+            android:id="@+id/action_sideMenuFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/myPageFragment"
