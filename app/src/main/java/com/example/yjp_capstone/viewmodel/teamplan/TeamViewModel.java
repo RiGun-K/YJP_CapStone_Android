@@ -1,4 +1,4 @@
-package com.example.yjp_capstone.viewmodel;
+package com.example.yjp_capstone.viewmodel.teamplan;
 
 import androidx.lifecycle.ViewModel;
 
