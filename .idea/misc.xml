@@ -11,15 +11,18 @@
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2845" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/drawable/menu_icon.xml" value="0.366" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_item_box_list.xml" value="0.14351851851851852" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_main.xml" value="0.15" />
-        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_box.xml" value="0.15" />
+        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_box.xml" value="0.22" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_box_item.xml" value="0.2921195652173913" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_box_menu.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_box_position.xml" value="0.2921195652173913" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_box_time.xml" value="0.2921195652173913" />
         <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_info.xml" value="0.2921195652173913" />
-        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_page.xml" value="0.2" />
-        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_side_menu.xml" value="0.33" />
+        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_my_page.xml" value="0.25" />
+        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/fragment_side_menu.xml" value="0.22" />
+        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/item_box_lidt.xml" value="0.1" />
+        <entry key="..\:/Users/bon300-16/Documents/GitHub/YJP_CapStone_Android/app/src/main/res/layout/item_my_box_list.xml" value="0.17603850050658562" />
       </map>
     </option>
   </component>
