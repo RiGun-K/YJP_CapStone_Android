@@ -45,6 +45,316 @@
 
         </LinearLayout>
 
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="환영합니다 고객님"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="140dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/camping"
+                android:layout_width="50dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:src="@drawable/camping" />
+
+            <ImageView
+                android:id="@+id/caravan"
+                android:layout_width="50dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:src="@drawable/caravan" />
+
+            <ImageView
+                android:id="@+id/tent"
+                android:layout_width="50dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:src="@drawable/tent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="225dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="캠핑"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="카라반"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="글램핑"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="275dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/house"
+                android:layout_width="50dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:src="@drawable/house" />
+
+            <ImageView
+                android:id="@+id/camvan"
+                android:layout_width="50dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:src="@drawable/camvan" />
+
+            <ImageView
+                android:id="@+id/picnic"
+                android:layout_width="50dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:src="@drawable/picnic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="357dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="펜션"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="차박"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="당일 피크닉"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/textInputLayout"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="center"
+            android:hint="캠핑장을 입력하세요"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/main_color"
+            app:boxBackgroundColor="@color/white"
+            app:startIconDrawable="@drawable/icon_people"
+            android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_id"
+                android:maxLength="20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="검색하기"
+            android:textSize="17dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="600dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register">
+
+        <ImageView
+            android:id="@+id/schedule"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/schedule" />
+
+        <ImageView
+            android:id="@+id/reservation"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/reservation" />
+
+        <ImageView
+            android:id="@+id/shopping"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/shopping" />
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/mypage"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/mypage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="660dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register">
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="일정"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="예약"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="쇼핑"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="보관"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MY"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
 </FrameLayout>
