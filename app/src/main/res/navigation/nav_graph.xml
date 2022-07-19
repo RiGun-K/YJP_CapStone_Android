@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_myPageFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_myPageFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/myBoxFragment"
@@ -49,6 +52,9 @@
         <action
             android:id="@+id/action_myBoxFragment_to_myBoxMenuFragment"
             app:destination="@id/myBoxMenuFragment" />
+        <action
+            android:id="@+id/action_myBoxFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/myBoxMenuFragment"
@@ -62,11 +68,8 @@
             android:id="@+id/action_myBoxMenuFragment_to_myBoxItemFragment"
             app:destination="@id/myBoxItemFragment" />
         <action
-            android:id="@+id/action_myBoxMenuFragment_to_myBoxPositionFragment"
-            app:destination="@id/myBoxPositionFragment" />
-        <action
-            android:id="@+id/action_myBoxMenuFragment_to_myBoxTimeFragment"
-            app:destination="@id/myBoxTimeFragment" />
+            android:id="@+id/action_myBoxMenuFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/myBoxItemFragment"
@@ -76,23 +79,8 @@
         <action
             android:id="@+id/action_myBoxItemFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/myBoxPositionFragment"
-        android:name="com.example.yjp_capstone.ui.MyBoxPositionFragment"
-        android:label="fragment_my_box_position"
-        tools:layout="@layout/fragment_my_box_position" >
         <action
-            android:id="@+id/action_myBoxPositionFragment_to_sideMenuFragment"
-            app:destination="@id/sideMenuFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/myBoxTimeFragment"
-        android:name="com.example.yjp_capstone.ui.MyBoxTimeFragment"
-        android:label="fragment_my_box_time"
-        tools:layout="@layout/fragment_my_box_time" >
-        <action
-            android:id="@+id/action_myBoxTimeFragment_to_sideMenuFragment"
-            app:destination="@id/sideMenuFragment" />
+            android:id="@+id/action_myBoxItemFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

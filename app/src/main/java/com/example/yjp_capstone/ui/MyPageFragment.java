@@ -5,11 +5,13 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.yjp_capstone.R;
 import com.example.yjp_capstone.databinding.FragmentMyPageBinding;
 import com.example.yjp_capstone.viewmodel.MyPageViewModel;
 
@@ -32,7 +34,15 @@ public class MyPageFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        binding.closeButton
+        binding.sideBar.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_sideMenuFragment);
+        });
+        binding.imageView2.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_mainFragment);
+        });
+        binding.view10.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myBoxFragment);
+        });
     }
 
     @Override

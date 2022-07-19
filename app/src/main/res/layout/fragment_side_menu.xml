@@ -50,7 +50,7 @@
             android:id="@+id/view"
             android:layout_width="412dp"
             android:layout_height="113dp"
-            android:background="#787373"
+            android:background="#3E787373"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,20 +62,193 @@
             android:layout_height="40dp"
             android:layout_marginStart="48dp"
             android:text="aaaa"
+            android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="138dp"
-            android:layout_height="40dp"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
             android:text="님 안녕하세요"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintHorizontal_bias="0.025"
             app:layout_constraintStart_toEndOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.513" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="305dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="136dp"
+            android:background="#2C787373"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="55dp"
+            android:layout_height="51dp"
+            android:src="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.629"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="104dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="84dp"
+            android:text="계획"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="305dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="228dp"
+            android:background="#2C787373"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/ic_reservation"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="@+id/view3"
+            app:layout_constraintVertical_bias="0.47" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="108dp"
+            android:layout_height="50dp"
+            android:text="예약"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/view3"
+            app:layout_constraintVertical_bias="0.484" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="305dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="320dp"
+            android:background="#2C787373"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="61dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/ic_locker"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="@+id/view4"
+            app:layout_constraintTop_toTopOf="@+id/view4"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보관함"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/view4"
+            app:layout_constraintVertical_bias="0.509" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="305dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="412dp"
+            android:background="#2C787373"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/ic_carts"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintVertical_bias="0.514" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쇼핑"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintVertical_bias="0.509" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="305dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="504dp"
+            android:background="#2C787373"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="@+id/view5"
+            app:layout_constraintVertical_bias="0.545" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마이페이지"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/view5"
+            app:layout_constraintVertical_bias="0.529" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
