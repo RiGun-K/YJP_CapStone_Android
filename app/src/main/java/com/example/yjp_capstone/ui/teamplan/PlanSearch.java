@@ -1,4 +1,4 @@
-package com.example.yjp_capstone.ui;
+package com.example.yjp_capstone.ui.teamplan;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -13,26 +13,26 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
-import com.example.yjp_capstone.viewmodel.PlanViewModel;
+import com.example.yjp_capstone.viewmodel.teamplan.PlanSearchViewModel;
 
-public class PlanFragment extends Fragment {
+public class PlanSearch extends Fragment {
 
-    private PlanViewModel mViewModel;
+    private PlanSearchViewModel mViewModel;
 
-    public static PlanFragment newInstance() {
-        return new PlanFragment();
+    public static PlanSearch newInstance() {
+        return new PlanSearch();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_plan, container, false);
+        return inflater.inflate(R.layout.fragment_plan_search, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(PlanViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(PlanSearchViewModel.class);
         // TODO: Use the ViewModel
     }
 

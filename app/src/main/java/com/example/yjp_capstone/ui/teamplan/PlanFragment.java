@@ -1,4 +1,4 @@
-package com.example.yjp_capstone.ui;
+package com.example.yjp_capstone.ui.teamplan;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -13,26 +13,26 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
-import com.example.yjp_capstone.viewmodel.TeamViewModel;
+import com.example.yjp_capstone.viewmodel.teamplan.PlanViewModel;
 
-public class TeamFragment extends Fragment {
+public class PlanFragment extends Fragment {
 
-    private TeamViewModel mViewModel;
+    private PlanViewModel mViewModel;
 
-    public static TeamFragment newInstance() {
-        return new TeamFragment();
+    public static PlanFragment newInstance() {
+        return new PlanFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_team, container, false);
+        return inflater.inflate(R.layout.fragment_plan, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(TeamViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(PlanViewModel.class);
         // TODO: Use the ViewModel
     }
 

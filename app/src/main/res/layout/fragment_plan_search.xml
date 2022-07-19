@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.teamplan.TeamFragment">
+    tools:context=".ui.teamplan.PlanSearch">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -46,7 +47,7 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/view2"
+            android:id="@+id/viewHeaderBar"
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:layout_marginTop="50dp"
@@ -55,26 +56,57 @@
             tools:layout_editor_absoluteX="1dp" />
 
         <TextView
-            android:id="@+id/teamText"
+            android:id="@+id/searchPlan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MyTeam"
+            android:layout_marginLeft="15dp"
+            android:text="계획검색"
             android:textColor="@color/black"
             android:textSize="10pt"
-            app:layout_constraintBottom_toTopOf="@+id/view2"
-            app:layout_constraintEnd_toStartOf="@+id/teamAddBtn"
+            app:layout_constraintBottom_toTopOf="@+id/viewHeaderBar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
-        <Button
-            android:id="@+id/teamAddBtn"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:text="+"
-            app:layout_constraintBottom_toTopOf="@+id/view2"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintVertical_bias="1.0"
-            tools:layout_editor_absoluteX="110dp" />
+
+        <FrameLayout
+            android:layout_width="332dp"
+            android:layout_height="415dp"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewHeaderBar"></FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <EditText
+                android:id="@+id/planKeyWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/planKeyWordSearchBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/planKeyWordSearchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="Button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
