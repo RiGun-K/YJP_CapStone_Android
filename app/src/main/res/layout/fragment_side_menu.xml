@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="0dp"
             android:layout_height="61dp"
             android:orientation="horizontal"
@@ -36,7 +37,7 @@
 
             <ImageButton
                 android:id="@+id/closeButton"
-                android:layout_width="wrap_content"
+                android:layout_width="22dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
@@ -44,6 +45,37 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="412dp"
+            android:layout_height="113dp"
+            android:background="#787373"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="121dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:text="aaaa"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="138dp"
+            android:layout_height="40dp"
+            android:text="님 안녕하세요"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintStart_toEndOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
