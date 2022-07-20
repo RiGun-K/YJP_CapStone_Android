@@ -36,13 +36,10 @@ public class TeamFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.sideBar.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_sideMenuFragment);
+            Navigation.findNavController(v).navigate(R.id.action_teamFragment_to_sideMenuFragment);
         });
         binding.imageView2.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_mainFragment);
-        });
-        binding.textView2.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myBoxFragment);
+            Navigation.findNavController(v).navigate(R.id.action_teamFragment_to_mainFragment);
         });
     }
 

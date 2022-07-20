@@ -39,10 +39,13 @@ public class PlanMenu extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_sideMenuFragment);
         });
         binding.imageView2.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_mainFragment);
+            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_mainFragment);
         });
-        binding.textView2.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myBoxFragment);
+        binding.PlanDetail.setOnClickListener(v->{
+            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_planDetail);
+        });
+        binding.PlanCheckList.setOnClickListener(v->{
+            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_planChecklist);
         });
     }
 
