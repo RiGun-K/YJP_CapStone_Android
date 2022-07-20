@@ -81,7 +81,7 @@
             app:layout_constraintVertical_bias="0.513" />
 
         <View
-            android:id="@+id/view2"
+            android:id="@+id/plan"
             android:layout_width="305dp"
             android:layout_height="83dp"
             android:layout_marginTop="136dp"
@@ -95,11 +95,11 @@
             android:layout_width="55dp"
             android:layout_height="51dp"
             android:src="@drawable/ic_time"
-            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintBottom_toBottomOf="@+id/plan"
             app:layout_constraintEnd_toStartOf="@+id/textView4"
             app:layout_constraintHorizontal_bias="0.629"
-            app:layout_constraintStart_toStartOf="@+id/view2"
-            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/plan"
+            app:layout_constraintTop_toTopOf="@+id/plan"
             app:layout_constraintVertical_bias="0.625" />
 
         <TextView
@@ -109,9 +109,9 @@
             android:layout_marginEnd="84dp"
             android:text="계획"
             android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view2"
-            app:layout_constraintEnd_toEndOf="@+id/view2"
-            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintBottom_toBottomOf="@+id/plan"
+            app:layout_constraintEnd_toEndOf="@+id/plan"
+            app:layout_constraintTop_toTopOf="@+id/plan"
             app:layout_constraintVertical_bias="0.487" />
 
         <View
@@ -217,7 +217,7 @@
             app:layout_constraintVertical_bias="0.509" />
 
         <View
-            android:id="@+id/view5"
+            android:id="@+id/myPage"
             android:layout_width="305dp"
             android:layout_height="83dp"
             android:layout_marginTop="504dp"
@@ -232,9 +232,9 @@
             android:layout_height="50dp"
             android:layout_marginStart="40dp"
             android:src="@drawable/ic_user"
-            app:layout_constraintBottom_toBottomOf="@+id/view5"
-            app:layout_constraintStart_toStartOf="@+id/view5"
-            app:layout_constraintTop_toTopOf="@+id/view5"
+            app:layout_constraintBottom_toBottomOf="@+id/myPage"
+            app:layout_constraintStart_toStartOf="@+id/myPage"
+            app:layout_constraintTop_toTopOf="@+id/myPage"
             app:layout_constraintVertical_bias="0.545" />
 
         <TextView
@@ -243,11 +243,11 @@
             android:layout_height="wrap_content"
             android:text="마이페이지"
             android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view5"
-            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintBottom_toBottomOf="@+id/myPage"
+            app:layout_constraintEnd_toEndOf="@+id/myPage"
             app:layout_constraintHorizontal_bias="0.227"
             app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintTop_toTopOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="@+id/myPage"
             app:layout_constraintVertical_bias="0.529" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_sideMenuFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_sideMenuFragment_to_teamFragment"
+            app:destination="@id/teamFragment" />
     </fragment>
     <fragment
         android:id="@+id/myPageFragment"
@@ -98,5 +101,107 @@
         <action
             android:id="@+id/action_myBoxItemFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="com.example.yjp_capstone.ui.teamplan.PlanFragment"
+        android:label="fragment_plan"
+        tools:layout="@layout/fragment_plan" >
+        <action
+            android:id="@+id/action_planFragment_to_planMenu"
+            app:destination="@id/planMenu" />
+        <action
+            android:id="@+id/action_planFragment_to_planAddSelect"
+            app:destination="@id/planAddSelect" />
+        <action
+            android:id="@+id/action_planFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planAddSelect"
+        android:name="com.example.yjp_capstone.ui.teamplan.PlanAddSelect"
+        android:label="fragment_plan_add_select"
+        tools:layout="@layout/fragment_plan_add_select" >
+        <action
+            android:id="@+id/action_planAddSelect_to_planSearch"
+            app:destination="@id/planSearch" />
+        <action
+            android:id="@+id/action_planAddSelect_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planAddSelect_to_sideMenuFragment2"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planChecklist"
+        android:name="com.example.yjp_capstone.ui.teamplan.PlanChecklist"
+        android:label="fragment_plan_checklist"
+        tools:layout="@layout/fragment_plan_checklist" >
+        <action
+            android:id="@+id/action_planChecklist_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planDetail"
+        android:name="com.example.yjp_capstone.ui.teamplan.PlanDetail"
+        android:label="fragment_plan_detail"
+        tools:layout="@layout/fragment_plan_detail" >
+        <action
+            android:id="@+id/action_planDetail_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planMenu"
+        android:name="com.example.yjp_capstone.ui.teamplan.PlanMenu"
+        android:label="fragment_plan_menu"
+        tools:layout="@layout/fragment_plan_menu" >
+        <action
+            android:id="@+id/action_planMenu_to_planDetail"
+            app:destination="@id/planDetail" />
+        <action
+            android:id="@+id/action_planMenu_to_planChecklist"
+            app:destination="@id/planChecklist" />
+        <action
+            android:id="@+id/action_planMenu_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planSearch"
+        android:name="com.example.yjp_capstone.ui.teamplan.PlanSearch"
+        android:label="fragment_plan_search"
+        tools:layout="@layout/fragment_plan_search" >
+        <action
+            android:id="@+id/action_planSearch_to_planDetail"
+            app:destination="@id/planDetail" />
+        <action
+            android:id="@+id/action_planSearch_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamMenu"
+        android:name="com.example.yjp_capstone.ui.teamplan.TeamMenu"
+        android:label="fragment_team_menu"
+        tools:layout="@layout/fragment_team_menu" >
+        <action
+            android:id="@+id/action_teamMenu_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_teamMenu_to_planFragment"
+            app:destination="@id/planFragment" />
+        <action
+            android:id="@+id/action_teamMenu_to_sideMenuFragment2"
+            app:destination="@id/sideMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.example.yjp_capstone.ui.teamplan.TeamFragment"
+        android:label="fragment_team"
+        tools:layout="@layout/fragment_team" >
+        <action
+            android:id="@+id/action_teamFragment_to_teamMenu"
+            app:destination="@id/teamMenu" />
+        <action
+            android:id="@+id/action_teamFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
     </fragment>
 </navigation>

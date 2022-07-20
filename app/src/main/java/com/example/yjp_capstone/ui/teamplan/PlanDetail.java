@@ -13,11 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.databinding.FragmentPlanDetailBinding;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanDetailViewModel;
 
 public class PlanDetail extends Fragment {
 
     private PlanDetailViewModel mViewModel;
+    private FragmentPlanDetailBinding binding;
 
     public static PlanDetail newInstance() {
         return new PlanDetail();
