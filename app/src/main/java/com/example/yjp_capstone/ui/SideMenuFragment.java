@@ -37,11 +37,16 @@ public class SideMenuFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         binding.closeButton.setOnClickListener(v->{
             Navigation.findNavController(v).navigateUp();
         });
-        binding.view5.setOnClickListener(v -> {
+        binding.myPage.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_sideMenuFragment_to_myPageFragment);
+        });
+
+        binding.plan.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_sideMenuFragment_to_teamFragment);
         });
     }
 

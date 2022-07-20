@@ -16,7 +16,7 @@ import com.example.yjp_capstone.databinding.FragmentMyPageBinding;
 import com.example.yjp_capstone.viewmodel.MyPageViewModel;
 
 public class MyPageFragment extends Fragment {
-    private FragmentMyPageBinding binding;
+    private FragmentMyPageBinding                                                                                                                                                               binding;
     private MyPageViewModel mViewModel;
 
     public static MyPageFragment newInstance() {
