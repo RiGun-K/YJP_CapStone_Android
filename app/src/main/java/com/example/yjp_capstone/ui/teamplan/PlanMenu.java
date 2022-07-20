@@ -13,11 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.databinding.FragmentPlanMenuBinding;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanMenuViewModel;
 
 public class PlanMenu extends Fragment {
 
     private PlanMenuViewModel mViewModel;
+    private FragmentPlanMenuBinding binding;
 
     public static PlanMenu newInstance() {
         return new PlanMenu();

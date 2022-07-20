@@ -13,11 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.databinding.FragmentPlanAddSelectBinding;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanAddSelectViewModel;
 
 public class PlanAddSelect extends Fragment {
 
     private PlanAddSelectViewModel mViewModel;
+    private FragmentPlanAddSelectBinding binding;
 
     public static PlanAddSelect newInstance() {
         return new PlanAddSelect();
