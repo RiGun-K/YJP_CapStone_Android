@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="0dp"
             android:layout_height="61dp"
             android:orientation="horizontal"
@@ -44,6 +45,50 @@
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/UseBoxName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="선택된 보관함"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintVertical_bias="0.933" />
+
+        <View
+            android:id="@+id/bar"
+            android:layout_width="345dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="80dp"
+            android:background="#D7000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="399dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="112dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <TextView
+            android:id="@+id/boxposition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:text="보관함위치"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.551" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

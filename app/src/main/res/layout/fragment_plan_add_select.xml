@@ -47,7 +47,7 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/view2"
+            android:id="@+id/plan"
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:layout_marginTop="50dp"
@@ -63,7 +63,7 @@
             android:text="계획선택"
             android:textColor="@color/black"
             android:textSize="10pt"
-            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintBottom_toTopOf="@+id/plan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
@@ -76,7 +76,7 @@
             android:textSize="14pt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view2" />
+            app:layout_constraintTop_toBottomOf="@+id/plan" />
 
         <Button
             android:id="@+id/planSearchBtn"
