@@ -13,11 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.databinding.FragmentPlanSearchBinding;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanSearchViewModel;
 
 public class PlanSearch extends Fragment {
 
     private PlanSearchViewModel mViewModel;
+    private FragmentPlanSearchBinding binding;
 
     public static PlanSearch newInstance() {
         return new PlanSearch();

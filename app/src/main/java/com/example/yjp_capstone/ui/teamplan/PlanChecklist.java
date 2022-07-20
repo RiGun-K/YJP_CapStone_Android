@@ -13,11 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.databinding.FragmentPlanChecklistBinding;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanChecklistViewModel;
 
 public class PlanChecklist extends Fragment {
 
     private PlanChecklistViewModel mViewModel;
+    private FragmentPlanChecklistBinding binding;
 
     public static PlanChecklist newInstance() {
         return new PlanChecklist();
