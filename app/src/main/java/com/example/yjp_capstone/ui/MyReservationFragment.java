@@ -1,5 +1,7 @@
 package com.example.yjp_capstone.ui;
 
+import androidx.lifecycle.ViewModelProvider;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,21 +14,22 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
-import com.example.yjp_capstone.databinding.FragmentMyPageBinding;
-import com.example.yjp_capstone.viewmodel.MyPageViewModel;
+import com.example.yjp_capstone.databinding.FragmentMyBoxBinding;
+import com.example.yjp_capstone.databinding.FragmentMyReservationBinding;
+import com.example.yjp_capstone.viewmodel.MyReservationViewModel;
 
-public class MyPageFragment extends Fragment {
-    private  FragmentMyPageBinding binding;
-    private MyPageViewModel mViewModel;
+public class MyReservationFragment extends Fragment {
+    private FragmentMyReservationBinding binding;
+    private MyReservationViewModel mViewModel;
 
-    public static MyPageFragment newInstance() {
-        return new MyPageFragment();
+    public static MyReservationFragment newInstance() {
+        return new MyReservationFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentMyPageBinding.inflate(inflater,container,false);
+        binding = FragmentMyReservationBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
         return view;
     }
@@ -35,17 +38,12 @@ public class MyPageFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.sideBar.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_sideMenuFragment);
+            Navigation.findNavController(v).navigate(R.id.action_myBoxFragment_to_sideMenuFragment);
         });
         binding.imageView2.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_mainFragment);
+            Navigation.findNavController(v).navigate(R.id.action_myBoxFragment_to_mainFragment);
         });
-        binding.view10.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myBoxFragment);
-        });
-        binding.reservationGo.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myReservationFragment);
-        });
+
     }
 
     @Override
@@ -53,5 +51,4 @@ public class MyPageFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }
