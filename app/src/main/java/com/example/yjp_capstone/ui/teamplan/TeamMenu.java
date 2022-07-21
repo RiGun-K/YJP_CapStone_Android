@@ -29,7 +29,9 @@ public class TeamMenu extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_team_menu, container, false);
+        binding = FragmentTeamMenuBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
+        return view;
     }
 
     @Override
@@ -47,10 +49,9 @@ public class TeamMenu extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(TeamMenuViewModel.class);
-        // TODO: Use the ViewModel
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 
 }

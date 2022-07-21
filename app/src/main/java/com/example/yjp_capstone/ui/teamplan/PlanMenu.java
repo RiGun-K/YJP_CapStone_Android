@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
 import com.example.yjp_capstone.databinding.FragmentPlanMenuBinding;
+import com.example.yjp_capstone.databinding.FragmentTeamMenuBinding;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanMenuViewModel;
 
 public class PlanMenu extends Fragment {
@@ -29,7 +30,9 @@ public class PlanMenu extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_plan_menu, container, false);
+        binding = FragmentPlanMenuBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
+        return view;
     }
 
     @Override
@@ -50,10 +53,9 @@ public class PlanMenu extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(PlanMenuViewModel.class);
-        // TODO: Use the ViewModel
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 
 }

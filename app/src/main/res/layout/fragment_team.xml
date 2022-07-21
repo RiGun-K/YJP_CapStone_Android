@@ -70,11 +70,12 @@
             android:id="@+id/teamAddBtn"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
             android:text="+"
             app:layout_constraintBottom_toTopOf="@+id/plan"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintVertical_bias="1.0"
-            tools:layout_editor_absoluteX="110dp" />
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
