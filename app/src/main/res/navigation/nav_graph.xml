@@ -37,12 +37,16 @@
         <action
             android:id="@+id/action_myPageFragment_to_myBoxFragment"
             app:destination="@id/myBoxFragment" />
+
         <action
             android:id="@+id/action_myPageFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
         <action
             android:id="@+id/action_myPageFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_myPageFragment_to_myReservationFragment"
+            app:destination="@id/myReservationFragment" />
     </fragment>
     <fragment
         android:id="@+id/myBoxFragment"
@@ -55,6 +59,18 @@
         <action
             android:id="@+id/action_myBoxFragment_to_myBoxMenuFragment"
             app:destination="@id/myBoxMenuFragment" />
+        <action
+            android:id="@+id/action_myBoxFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myReservationFragment"
+        android:name="com.example.yjp_capstone.ui.MyReservationFragment"
+        android:label="fragment_my_reservation"
+        tools:layout="@layout/fragment_my_reservation" >
+        <action
+            android:id="@+id/action_myBoxFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
         <action
             android:id="@+id/action_myBoxFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
