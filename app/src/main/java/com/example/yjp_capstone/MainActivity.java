@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        Gson gson = new GsonBuilder().setLenient().create();
-
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://localhost:9002/api/")
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build();
-
-        retrofit.create(ApiController.class);
+//        Gson gson = new GsonBuilder().setLenient().create();
+//
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("http://localhost:9002/api/")
+//                .addConverterFactory(GsonConverterFactory.create(gson))
+//                .build();
+//
+//        retrofit.create(ApiController.class);
         Log.d("RESPONSE", "test");
     }
 }

@@ -75,20 +75,103 @@
             android:layout_width="399dp"
             android:layout_height="77dp"
             android:layout_marginTop="112dp"
+            android:background="#1EB3B3B3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="43dp"
+            android:layout_height="41dp"
+            android:src="@drawable/ic_map"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toStartOf="@+id/boxposition"
+            app:layout_constraintHorizontal_bias="0.752"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.555" />
 
         <TextView
             android:id="@+id/boxposition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
-            android:text="보관함위치"
+            android:layout_marginStart="152dp"
+            android:text="보관함 위치"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintStart_toStartOf="@+id/view2"
             app:layout_constraintTop_toTopOf="@+id/view2"
-            app:layout_constraintVertical_bias="0.551" />
+            app:layout_constraintVertical_bias="0.54" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="399dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="200dp"
+            android:background="#1EB3B3B3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="84dp"
+            android:src="@drawable/ic_range"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="@+id/view5"
+            app:layout_constraintVertical_bias="0.324" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="108dp"
+            android:text="보관함 사용기간"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/view5" />
+
+        <View
+            android:id="@+id/ubItem"
+            android:layout_width="399dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="288dp"
+            android:background="#1EB3B3B3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="168dp"
+            android:text="보관 장비"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ubItem"
+            app:layout_constraintEnd_toEndOf="@+id/ubItem"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/ubItem"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/ic_camping_item"
+            app:layout_constraintBottom_toBottomOf="@+id/ubItem"
+            app:layout_constraintStart_toStartOf="@+id/ubItem"
+            app:layout_constraintTop_toTopOf="@+id/ubItem"
+            app:layout_constraintVertical_bias="0.437" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
