@@ -9,12 +9,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.adapter.MyBoxAdapter;
 import com.example.yjp_capstone.databinding.FragmentMyBoxBinding;
 import com.example.yjp_capstone.viewmodel.MyBoxViewModel;
 
@@ -44,9 +46,14 @@ public class MyBoxFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        binding.useboxlist.
+
         MyBoxViewModel model = new MyBoxViewModel();
-        model.getUseBox();
+
+        MyBoxAdapter adapter = new MyBoxAdapter(model.getUseBox());
+
+        RecyclerView recyclerView = binding.useboxlist;
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(adapter);
 
         binding.sideBar.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_myBoxFragment_to_sideMenuFragment);

@@ -121,4 +121,22 @@ public class Storage {  // 보관소
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
+
+    @Override
+    public String toString() {
+        return "Storage{" +
+                "storageCode=" + storageCode +
+                ", storageName='" + storageName + '\'' +
+                ", storageZipcode='" + storageZipcode + '\'' +
+                ", storageAddress='" + storageAddress + '\'' +
+                ", storageDetailAddress='" + storageDetailAddress + '\'' +
+                ", storageTel='" + storageTel + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", storageState='" + storageState + '\'' +
+                ", filename='" + filename + '\'' +
+                ", filePath='" + filePath + '\'' +
+                ", storageBoxes=" + storageBoxes +
+                '}';
+    }
 }

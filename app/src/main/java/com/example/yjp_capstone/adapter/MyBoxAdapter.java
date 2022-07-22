@@ -1,5 +1,6 @@
 package com.example.yjp_capstone.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,13 +10,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.domain.UseBoxDAO;
 import com.example.yjp_capstone.domain.UseStorageBox;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class MyBoxAdapter extends RecyclerView.Adapter<MyBoxAdapter.ViewHolder> {
-    private ArrayList<UseStorageBox> useStorageBoxList;
+    private List<UseBoxDAO> UseBoxList;
+
+    public MyBoxAdapter(List<UseBoxDAO> useBox) {
+        this.UseBoxList = useBox;
+        notifyDataSetChanged();
+    }
 
     @NonNull
     @Override
@@ -26,17 +34,13 @@ public class MyBoxAdapter extends RecyclerView.Adapter<MyBoxAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MyBoxAdapter.ViewHolder holder, int position) {
-        holder.onBind(useStorageBoxList.get(position));
+        holder.onBind(UseBoxList.get(position));
     }
 
-    public void setFriendList(ArrayList<UseStorageBox> list){
-        this.useStorageBoxList = list;
-        notifyDataSetChanged();
-    }
 
     @Override
     public int getItemCount() {
-        return useStorageBoxList.size();
+        return UseBoxList.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
@@ -48,11 +52,13 @@ public class MyBoxAdapter extends RecyclerView.Adapter<MyBoxAdapter.ViewHolder> 
 
             name = (TextView) itemView.findViewById(R.id.boxName);
             info = (TextView) itemView.findViewById(R.id.boxinfo);
+            Log.d("bbb",name+","+info);
         }
 
-        void onBind(UseStorageBox item){
+        void onBind(UseBoxDAO item){
             name.setText(item.getBoxName());
-            info.setText(item.getBoxState());
+            info.setText(item.getUseState());
+            Log.d("bbb",name+","+info);
         }
     }
 }
