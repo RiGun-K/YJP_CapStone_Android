@@ -31,6 +31,7 @@ public class TeamFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         binding = FragmentTeamBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
+
         return view;
     }
 
