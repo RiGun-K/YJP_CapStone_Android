@@ -86,14 +86,14 @@
 
                 <ImageView
                     android:id="@+id/imageTeamWriter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/main_icon" />
 
                 <TextView
                     android:id="@+id/textTeamWriter"
@@ -124,14 +124,14 @@
 
                 <ImageView
                     android:id="@+id/imageTeamMember"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/main_icon" />
 
                 <TextView
                     android:id="@+id/textTeamMember"
@@ -164,14 +164,14 @@
 
                 <ImageView
                     android:id="@+id/imageTeamPlan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/main_icon" />
 
                 <TextView
                     android:id="@+id/textTeamPlan"

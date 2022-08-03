@@ -38,7 +38,7 @@ public class TeamMenu extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.sideBar.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_sideMenuFragment);
+            Navigation.findNavController(v).navigate(R.id.action_teamMenu_to_sideMenuFragment);
         });
         binding.imageView2.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_teamMenu_to_mainFragment);

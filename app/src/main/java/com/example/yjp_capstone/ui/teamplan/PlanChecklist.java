@@ -8,20 +8,31 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.adapter.CheckListAdpater;
 import com.example.yjp_capstone.databinding.FragmentPlanChecklistBinding;
-import com.example.yjp_capstone.databinding.FragmentTeamMenuBinding;
+import com.example.yjp_capstone.domain.CheckListDomain;
+import com.example.yjp_capstone.ui.tech.RecyclerDecoration;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanChecklistViewModel;
+
+import java.util.ArrayList;
 
 public class PlanChecklist extends Fragment {
 
     private PlanChecklistViewModel mViewModel;
     private FragmentPlanChecklistBinding binding;
+    private RecyclerView recyclerView = null;
+    private RecyclerView.LayoutManager layoutManager = null;
+    private CheckListAdpater listAdpater = null;
+    ArrayList<CheckListDomain> listDomains;
 
     public static PlanChecklist newInstance() {
         return new PlanChecklist();
@@ -32,6 +43,27 @@ public class PlanChecklist extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         binding = FragmentPlanChecklistBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
+        recyclerView = binding.checkListList;
+        listDomains = new ArrayList<>();
+        listAdpater = new CheckListAdpater(listDomains);
+        layoutManager = new GridLayoutManager(getContext(),3);
+        recyclerView.setAdapter(listAdpater);
+        recyclerView.setLayoutManager(layoutManager);
+
+        listDomains.add(new CheckListDomain("리스트1"));
+        listDomains.add(new CheckListDomain("리스트2"));
+        listDomains.add(new CheckListDomain("리스트3"));
+        listDomains.add(new CheckListDomain("리스트4"));
+        listDomains.add(new CheckListDomain("리스트5"));
+        listDomains.add(new CheckListDomain("리스트6"));
+        listDomains.add(new CheckListDomain("리스트7"));
+        listDomains.add(new CheckListDomain("리스트8"));
+        listDomains.add(new CheckListDomain("리스트9"));
+
+        RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
+        recyclerView.addItemDecoration(spaceDecoration);
+        listAdpater.notifyDataSetChanged();
+
         return view;
     }
 
