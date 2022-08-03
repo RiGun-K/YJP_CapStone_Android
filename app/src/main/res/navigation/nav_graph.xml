@@ -116,6 +116,9 @@
         <action
             android:id="@+id/action_planFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planAddSelect"
@@ -131,6 +134,9 @@
         <action
             android:id="@+id/action_planAddSelect_to_sideMenuFragment2"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planAddSelect_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planChecklist"
@@ -140,6 +146,9 @@
         <action
             android:id="@+id/action_planChecklist_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planChecklist_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planDetail"
@@ -149,6 +158,9 @@
         <action
             android:id="@+id/action_planDetail_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planDetail_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planMenu"
@@ -164,6 +176,9 @@
         <action
             android:id="@+id/action_planMenu_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planMenu_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planSearch"
@@ -176,6 +191,9 @@
         <action
             android:id="@+id/action_planSearch_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planSearch_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/teamMenu"
@@ -191,6 +209,9 @@
         <action
             android:id="@+id/action_teamMenu_to_sideMenuFragment2"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_teamMenu_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/teamFragment"
@@ -203,5 +224,8 @@
         <action
             android:id="@+id/action_teamFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_teamFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

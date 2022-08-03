@@ -44,7 +44,6 @@ public class SideMenuFragment extends Fragment {
         binding.myPage.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_sideMenuFragment_to_myPageFragment);
         });
-
         binding.plan.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_sideMenuFragment_to_teamFragment);
         });
