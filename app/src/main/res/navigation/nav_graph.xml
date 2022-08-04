@@ -186,14 +186,14 @@
         android:label="fragment_plan_search"
         tools:layout="@layout/fragment_plan_search" >
         <action
-            android:id="@+id/action_planSearch_to_planDetail"
-            app:destination="@id/planDetail" />
-        <action
             android:id="@+id/action_planSearch_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
         <action
             android:id="@+id/action_planSearch_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_planSearch_to_planMenu"
+            app:destination="@id/planMenu" />
     </fragment>
     <fragment
         android:id="@+id/teamMenu"

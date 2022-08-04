@@ -86,14 +86,14 @@
 
                 <ImageView
                     android:id="@+id/imageTeamWriter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/teamboard" />
 
                 <TextView
                     android:id="@+id/textTeamWriter"
@@ -101,6 +101,7 @@
                     android:layout_height="wrap_content"
                     android:text="팀 게시판"
                     android:textSize="14pt"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageTeamWriter"
@@ -124,14 +125,14 @@
 
                 <ImageView
                     android:id="@+id/imageTeamMember"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/teammember" />
 
                 <TextView
                     android:id="@+id/textTeamMember"
@@ -139,6 +140,7 @@
                     android:layout_height="wrap_content"
                     android:text="팀 멤버"
                     android:textSize="14pt"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageTeamMember"
@@ -164,14 +166,14 @@
 
                 <ImageView
                     android:id="@+id/imageTeamPlan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/teamplan" />
 
                 <TextView
                     android:id="@+id/textTeamPlan"
@@ -179,6 +181,7 @@
                     android:layout_height="wrap_content"
                     android:text="팀 계획"
                     android:textSize="14pt"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageTeamPlan"

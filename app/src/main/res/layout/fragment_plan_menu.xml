@@ -86,14 +86,14 @@
 
                 <ImageView
                     android:id="@+id/imagePlanDetail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/plandetail" />
 
                 <TextView
                     android:id="@+id/textPlanDetail"
@@ -101,6 +101,7 @@
                     android:layout_height="wrap_content"
                     android:text="계획 상세"
                     android:textSize="14pt"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imagePlanDetail"
@@ -124,14 +125,14 @@
 
                 <ImageView
                     android:id="@+id/imagePlanCheckList"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/plancheck"/>
 
                 <TextView
                     android:id="@+id/textPlanCheckList"
@@ -139,6 +140,7 @@
                     android:layout_height="wrap_content"
                     android:text="체크리스트"
                     android:textSize="14pt"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imagePlanCheckList"

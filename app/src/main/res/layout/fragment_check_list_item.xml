@@ -2,10 +2,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".ui.teamplan.TeamItemFragment">
-
+    tools:context=".ui.teamplan.CheckListItem">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/teamItemLayout"
@@ -13,19 +12,16 @@
         android:layout_height="80dp">
 
         <TextView
-            android:id="@+id/teamItemLayoutText"
-            android:layout_width="match_parent"
+            android:id="@+id/listLayoutText"
+            android:layout_width="100dp"
             android:layout_height="80dp"
-            android:text="팀 이름이 들어간다"
+            android:text="아이템 이름"
             android:textSize="12pt"
-            android:layout_marginRight="25dp"
-            android:layout_marginLeft="25dp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </FrameLayout>
