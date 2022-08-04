@@ -30,9 +30,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull TeamAdapter.ViewHolder holder, int position) {
         holder.onBind(teamList.get(position));
-        if(position ==1 || position ==2 || position == 6){
-            holder.chColor();
-        }
+        holder.chColor(teamList.get(position));
     }
 
     public interface OnItemClickListener{
@@ -72,8 +70,12 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
         void onBind(TeamDomain item){
             title.setText(item.getTeamTitle());
         }
-        void chColor(){
-            title.setTextColor(0xFFFF0000);
+        void chColor(TeamDomain item){
+            if(!item.isStatus()){
+                title.setTextColor(0xFFFF0000);
+            }else{
+                title.setTextColor(0xFF000000);
+            }
         }
 
     }

@@ -41,9 +41,9 @@ public class PlanAdapter extends RecyclerView.Adapter<PlanAdapter.ViewHolder> {
         void onItemClick(View v, int pos);
     }
 
-    private PlanAdapter.OnItemClickListener onItemClickListener = null;
+    private OnItemClickListener onItemClickListener = null;
 
-    public void setOnItemClickListener(PlanAdapter.OnItemClickListener listener){
+    public void setOnItemClickListener(OnItemClickListener listener){
         this.onItemClickListener = listener;
     }
 

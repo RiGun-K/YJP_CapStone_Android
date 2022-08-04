@@ -1,5 +1,7 @@
 package com.example.yjp_capstone.ui.teamplan;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -30,6 +32,7 @@ public class TeamFragment extends Fragment {
     private TeamAdapter teamAdapter = null;
     private RecyclerView.LayoutManager layoutManager = null;
     ArrayList<TeamDomain> teamDomains;
+    ArrayList<String> strings = new ArrayList<>();
 
     public static TeamFragment newInstance() {
         return new TeamFragment();
@@ -48,14 +51,23 @@ public class TeamFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(layoutManager);
 
-        teamDomains.add(new TeamDomain("칭구칭구",true));
-        teamDomains.add(new TeamDomain("올바른 생활",false));
-        teamDomains.add(new TeamDomain("너는 누구냐",false));
-        teamDomains.add(new TeamDomain("명량",true));
-        teamDomains.add(new TeamDomain("영화",true));
-        teamDomains.add(new TeamDomain("영화",true));
-        teamDomains.add(new TeamDomain("영화",true));
-        teamDomains.add(new TeamDomain("영화",true));
+        strings.add("칭구칭구1");
+        strings.add("칭구칭구2");
+        strings.add("칭구칭구3");
+        strings.add("칭구칭구4");
+        strings.add("칭구칭구5");
+        strings.add("칭구칭구6");
+        strings.add("칭구칭구7");
+        strings.add("칭구칭구8");
+
+        teamDomains.add(new TeamDomain("칭구칭구1",true));
+        teamDomains.add(new TeamDomain("칭구칭구2",true));
+        teamDomains.add(new TeamDomain("칭구칭구3",true));
+        teamDomains.add(new TeamDomain("칭구칭구4",true));
+        teamDomains.add(new TeamDomain("칭구칭구5",true));
+        teamDomains.add(new TeamDomain("칭구칭구6",true));
+        teamDomains.add(new TeamDomain("칭구칭구7",false));
+        teamDomains.add(new TeamDomain("칭구칭구8",false));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);
@@ -73,6 +85,28 @@ public class TeamFragment extends Fragment {
                 }
                 if(pos == 6){
 
+                }
+
+                if(!teamDomains.get(pos).isStatus()){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                    builder.setTitle("초대 수락").setMessage("초대를 수락하시겠습니까?");
+                    builder.setNegativeButton("거부합니다", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            teamAdapter.notifyItemRemoved(pos);
+                            teamAdapter.notifyItemRangeRemoved(pos, pos);
+                            teamDomains.remove(pos);
+                        }
+                    });
+                    builder.setPositiveButton("수락합니다", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            teamDomains.set(pos, new TeamDomain(strings.get(pos), true));
+                            teamAdapter.notifyItemChanged(pos);
+                        }
+                    });
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
                 }
             }
         });

@@ -31,7 +31,7 @@ public class CheckListAdpater extends RecyclerView.Adapter<CheckListAdpater.View
     @Override
     public void onBindViewHolder(@NonNull CheckListAdpater.ViewHolder holder, int position) {
         holder.onBind(listDomains.get(position));
-
+        holder.chColor(listDomains.get(position));
     }
 
     @Override
@@ -43,9 +43,9 @@ public class CheckListAdpater extends RecyclerView.Adapter<CheckListAdpater.View
         void onItemClick(View v, int pos);
     }
 
-    private PlanAdapter.OnItemClickListener onItemClickListener = null;
+    private OnItemClickListener onItemClickListener = null;
 
-    public void setOnItemClickListener(PlanAdapter.OnItemClickListener listener){
+    public void setOnItemClickListener(OnItemClickListener listener){
         this.onItemClickListener = listener;
     }
 
@@ -68,8 +68,15 @@ public class CheckListAdpater extends RecyclerView.Adapter<CheckListAdpater.View
             });
         }
 
-        void onBind(CheckListDomain plan){
-            itemTitle.setText(plan.getItemName());
+        void onBind(CheckListDomain list){
+            itemTitle.setText(list.getItemName());
         }
+        void chColor(CheckListDomain list){
+            if(!list.isStatus()){
+                itemTitle.setTextColor(0xFFFF0000);}
+            else{
+                itemTitle.setTextColor(0xFF000000);
+            }
+    }
     }
 }

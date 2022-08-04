@@ -53,14 +53,6 @@ public class PlanSearch extends Fragment {
 
         planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
         planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획3", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획4", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획5", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획6", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획7", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획8", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획9", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획10", "2022-03-08 ~ 2022-03-09"));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);

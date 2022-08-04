@@ -50,18 +50,29 @@ public class PlanChecklist extends Fragment {
         recyclerView.setAdapter(listAdpater);
         recyclerView.setLayoutManager(layoutManager);
 
-        listDomains.add(new CheckListDomain("리스트1"));
-        listDomains.add(new CheckListDomain("리스트2"));
-        listDomains.add(new CheckListDomain("리스트3"));
-        listDomains.add(new CheckListDomain("리스트4"));
-        listDomains.add(new CheckListDomain("리스트5"));
-        listDomains.add(new CheckListDomain("리스트6"));
-        listDomains.add(new CheckListDomain("리스트7"));
-        listDomains.add(new CheckListDomain("리스트8"));
-        listDomains.add(new CheckListDomain("리스트9"));
+        listDomains.add(new CheckListDomain("리스트1", true));
+        listDomains.add(new CheckListDomain("리스트2", true));
+        listDomains.add(new CheckListDomain("리스트3", true));
+        listDomains.add(new CheckListDomain("리스트4", true));
+        listDomains.add(new CheckListDomain("리스트5", false));
+        listDomains.add(new CheckListDomain("리스트6", true));
+        listDomains.add(new CheckListDomain("리스트7", true));
+        listDomains.add(new CheckListDomain("리스트8", true));
+        listDomains.add(new CheckListDomain("리스트9", true));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);
+        listAdpater.setOnItemClickListener(new CheckListAdpater.OnItemClickListener(){
+            @Override
+            public void onItemClick(View v, int pos) {
+                if (listDomains.get(pos).isStatus()){
+                    listDomains.set(pos, new CheckListDomain("리스트"+(pos+1), false));
+                }else{
+                    listDomains.set(pos, new CheckListDomain("리스트"+(pos+1), true));
+                }
+                listAdpater.notifyItemChanged(pos);
+            }
+        });
         listAdpater.notifyDataSetChanged();
 
         return view;
