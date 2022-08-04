@@ -73,9 +73,12 @@ public class CheckListAdpater extends RecyclerView.Adapter<CheckListAdpater.View
         }
         void chColor(CheckListDomain list){
             if(!list.isStatus()){
-                itemTitle.setTextColor(0xFFFF0000);}
+                itemTitle.setTextColor(0xFFFFFFFF);
+                itemTitle.setBackgroundColor(0xFFFF0000);
+            }
             else{
                 itemTitle.setTextColor(0xFF000000);
+                itemTitle.setBackgroundColor(0xFF66B2FF);
             }
     }
     }

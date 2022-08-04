@@ -72,9 +72,11 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
         }
         void chColor(TeamDomain item){
             if(!item.isStatus()){
-                title.setTextColor(0xFFFF0000);
+                title.setTextColor(0xFFFFFFFF);
+                title.setBackgroundColor(0xFFBCDB56);
             }else{
                 title.setTextColor(0xFF000000);
+                title.setBackgroundColor(0xFFFFFFFF);
             }
         }
 
