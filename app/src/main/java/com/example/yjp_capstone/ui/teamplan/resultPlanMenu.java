@@ -15,22 +15,22 @@ import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
 import com.example.yjp_capstone.databinding.FragmentPlanMenuBinding;
-import com.example.yjp_capstone.databinding.FragmentTeamMenuBinding;
-import com.example.yjp_capstone.viewmodel.teamplan.PlanMenuViewModel;
+import com.example.yjp_capstone.databinding.FragmentResultPlanMenuBinding;
+import com.example.yjp_capstone.viewmodel.teamplan.ResultPlanMenuViewModel;
 
-public class PlanMenu extends Fragment {
+public class resultPlanMenu extends Fragment {
 
-    private PlanMenuViewModel mViewModel;
-    private FragmentPlanMenuBinding binding;
+    private ResultPlanMenuViewModel mViewModel;
+    private FragmentResultPlanMenuBinding binding;
 
-    public static PlanMenu newInstance() {
-        return new PlanMenu();
+    public static resultPlanMenu newInstance() {
+        return new resultPlanMenu();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentPlanMenuBinding.inflate(inflater, container, false);
+        binding = FragmentResultPlanMenuBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
         return view;
     }
@@ -39,16 +39,13 @@ public class PlanMenu extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.sideBar.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_sideMenuFragment);
+            Navigation.findNavController(v).navigate(R.id.action_resultPlanMenu_to_sideMenuFragment);
         });
         binding.imageView2.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_mainFragment);
+            Navigation.findNavController(v).navigate(R.id.action_resultPlanMenu_to_mainFragment);
         });
         binding.PlanDetail.setOnClickListener(v->{
-            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_planDetail);
-        });
-        binding.PlanCheckList.setOnClickListener(v->{
-            Navigation.findNavController(v).navigate(R.id.action_planMenu_to_planChecklist);
+            Navigation.findNavController(v).navigate(R.id.action_resultPlanMenu_to_resultPlanDetail);
         });
     }
 
@@ -56,6 +53,14 @@ public class PlanMenu extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mViewModel = new ViewModelProvider(this).get(ResultPlanMenuViewModel.class);
+        // TODO: Use the ViewModel
     }
 
 }

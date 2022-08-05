@@ -1,8 +1,10 @@
 package com.example.yjp_capstone.ui.teamplan;
 
-import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,24 +13,18 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.example.yjp_capstone.R;
 import com.example.yjp_capstone.adapter.PlanAdapter;
-import com.example.yjp_capstone.databinding.FragmentPlanSearchBinding;
-import com.example.yjp_capstone.databinding.FragmentTeamMenuBinding;
+import com.example.yjp_capstone.databinding.FragmentResultSearchBinding;
 import com.example.yjp_capstone.domain.PlanDomain;
 import com.example.yjp_capstone.ui.tech.RecyclerDecoration;
 import com.example.yjp_capstone.viewmodel.teamplan.PlanSearchViewModel;
 
 import java.util.ArrayList;
 
-public class PlanSearch extends Fragment {
-
+public class resultSearch extends Fragment {
     private PlanSearchViewModel mViewModel;
-    private FragmentPlanSearchBinding binding;
+    private FragmentResultSearchBinding binding;
     private RecyclerView recyclerView = null;
     private RecyclerView.LayoutManager layoutManager = null;
     private PlanAdapter planAdapter = null;
@@ -41,10 +37,10 @@ public class PlanSearch extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentPlanSearchBinding.inflate(inflater, container, false);
+        binding = FragmentResultSearchBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
-        recyclerView = binding.planSearchList;
+        recyclerView = binding.searchResultList;
         planDomains = new ArrayList<>();
         planAdapter = new PlanAdapter(planDomains);
         recyclerView.setAdapter(planAdapter);
@@ -52,23 +48,6 @@ public class PlanSearch extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);
@@ -77,7 +56,7 @@ public class PlanSearch extends Fragment {
             @Override
             public void onItemClick(View v, int pos) {
                 if(pos == 0){
-                    Navigation.findNavController(v).navigate(R.id.action_planSearch_to_resultPlanMenu);
+                    Navigation.findNavController(v).navigate(R.id.action_resultSearch_to_resultPlanMenu);
                 }
                 if(pos == 1){
 
@@ -99,13 +78,10 @@ public class PlanSearch extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.sideBar.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_planSearch_to_sideMenuFragment);
+            Navigation.findNavController(v).navigate(R.id.action_resultSearch_to_sideMenuFragment2);
         });
         binding.imageView2.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_planSearch_to_mainFragment);
-        });
-        binding.planKeyWordSearchBtn.setOnClickListener(v->{
-            Navigation.findNavController(v).navigate(R.id.action_planSearch_to_resultSearch);
+            Navigation.findNavController(v).navigate(R.id.action_resultSearch_to_mainFragment);
         });
     }
 
