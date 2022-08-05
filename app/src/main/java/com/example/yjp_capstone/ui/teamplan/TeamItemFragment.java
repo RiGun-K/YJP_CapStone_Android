@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yjp_capstone.R;
+import com.example.yjp_capstone.viewmodel.teamplan.ResultSearchViewModel;
 import com.example.yjp_capstone.viewmodel.teamplan.TeamItemViewModel;
 
 public class TeamItemFragment extends Fragment {
@@ -35,5 +36,4 @@ public class TeamItemFragment extends Fragment {
         mViewModel = new ViewModelProvider(this).get(TeamItemViewModel.class);
         // TODO: Use the ViewModel
     }
-
 }
