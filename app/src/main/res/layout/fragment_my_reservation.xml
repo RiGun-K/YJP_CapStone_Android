@@ -71,6 +71,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reservationList"
             android:layout_width="408dp"
             android:layout_height="493dp"
             android:layout_marginTop="96dp"

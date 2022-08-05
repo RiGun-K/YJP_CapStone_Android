@@ -43,6 +43,9 @@ public class MyPageFragment extends Fragment {
         binding.view10.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myBoxFragment);
         });
+        binding.reservationGo.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myReservationFragment);
+        });
     }
 
     @Override
