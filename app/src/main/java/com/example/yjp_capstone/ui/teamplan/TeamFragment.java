@@ -51,23 +51,23 @@ public class TeamFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(layoutManager);
 
-        strings.add("칭구칭구1");
-        strings.add("칭구칭구2");
-        strings.add("칭구칭구3");
-        strings.add("칭구칭구4");
-        strings.add("칭구칭구5");
-        strings.add("칭구칭구6");
-        strings.add("칭구칭구7");
-        strings.add("칭구칭구8");
+        strings.add("영진전문대학");
+        strings.add("정보통신");
+        strings.add("고등학교");
+        strings.add("직장인");
+        strings.add("동아리1");
+        strings.add("동아리2");
+        strings.add("ABC");
+        strings.add("국제");
 
-        teamDomains.add(new TeamDomain("칭구칭구1",true));
-        teamDomains.add(new TeamDomain("칭구칭구2",true));
-        teamDomains.add(new TeamDomain("칭구칭구3",true));
-        teamDomains.add(new TeamDomain("칭구칭구4",true));
-        teamDomains.add(new TeamDomain("칭구칭구5",true));
-        teamDomains.add(new TeamDomain("칭구칭구6",true));
-        teamDomains.add(new TeamDomain("칭구칭구7",false));
-        teamDomains.add(new TeamDomain("칭구칭구8",false));
+        teamDomains.add(new TeamDomain("영진전문대학",true));
+        teamDomains.add(new TeamDomain("정보통신",true));
+        teamDomains.add(new TeamDomain("고등학교",true));
+        teamDomains.add(new TeamDomain("직장인",true));
+        teamDomains.add(new TeamDomain("동아리1",true));
+        teamDomains.add(new TeamDomain("동아리2",true));
+        teamDomains.add(new TeamDomain("ABC",false));
+        teamDomains.add(new TeamDomain("국제",false));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);

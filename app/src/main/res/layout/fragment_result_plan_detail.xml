@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="결과계획"
+            android:text="오지투어"
             android:textColor="@color/black"
             android:textSize="10pt"
             app:layout_constraintBottom_toTopOf="@+id/view2"
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:text="팀 : 테스트팀"
+            android:text="팀 : 고난역경"
             android:textColor="@color/black"
             android:textSize="10pt"
             app:layout_constraintBottom_toTopOf="@+id/view2"
@@ -120,7 +120,7 @@
                     android:layout_marginTop="5dp"
                     android:textSize="8pt"
                     android:textColor="@color/black"
-                    android:text="기간    : 2022.08.05-2022.08.07" />
+                    android:text="기간    : 2022.08.08-2022.08.09" />
 
                 <TextView
                     android:id="@+id/textView18"
@@ -129,7 +129,7 @@
                     android:layout_marginTop="5dp"
                     android:textSize="8pt"
                     android:textColor="@color/black"
-                    android:text="인원    : 4명" />
+                    android:text="인원    : 6명" />
 
                 <TextView
                     android:id="@+id/textView19"
@@ -138,7 +138,7 @@
                     android:layout_marginTop="5dp"
                     android:textSize="8pt"
                     android:textColor="@color/black"
-                    android:text="위치    : 대구 산곡리 강변길 180-15" />
+                    android:text="위치    : 강원도 양변군 양변북길 1256-15" />
                 <TextView
                     android:id="@+id/textView119"
                     android:layout_width="match_parent"
@@ -146,7 +146,7 @@
                     android:layout_marginTop="5dp"
                     android:textSize="8pt"
                     android:textColor="@color/black"
-                    android:text="경비    : 300,000원" />
+                    android:text="경비    : 600,000원" />
 
                 <TextView
                     android:id="@+id/planDetailSubTitle2"
@@ -211,24 +211,19 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="1일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="06:00-13:00" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="출발, 도착" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -239,24 +234,24 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="1일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="13:00-14:00" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
+                            android:text="점심식사" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="도시락" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -267,24 +262,24 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="1일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="14:00-16:00" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
+                            android:text="캠핑준비" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="텐트, 장작, 캠프파이어키트, 캠핑의자, 조리도구, 랜턴" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -295,24 +290,19 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="1일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="16:00-19:00" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="자유시간" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -323,24 +313,24 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="1일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="19:00-22:00" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
+                            android:text="바베큐" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="바베큐" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -351,24 +341,19 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="1일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="22:00-22:30" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="뒷정리" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -379,24 +364,24 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="1일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="22:30-08:00" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
+                            android:text="숙면" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="침낭" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -407,24 +392,24 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="2일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="08:00-08:30" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
+                            android:text="아침식사" />
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="라면" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -435,24 +420,19 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="2일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="08:30-9:30" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="귀가준비" />
                     </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
@@ -463,54 +443,20 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="일차"/>
+                            android:text="2일차"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="12:00-13:00" />
+                            android:text="09:30-18:00" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
-                            android:text="외유내강" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="물품A" />
+                            android:text="귀가, 관광" />
                     </TableRow>
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="일차"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="12:00-13:00" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="외유내강" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="물품A" />
-                    </TableRow>
-
                 </TableLayout>
             </LinearLayout>
         </ScrollView>

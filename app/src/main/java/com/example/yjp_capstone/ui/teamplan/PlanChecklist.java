@@ -33,6 +33,7 @@ public class PlanChecklist extends Fragment {
     private RecyclerView.LayoutManager layoutManager = null;
     private CheckListAdpater listAdpater = null;
     ArrayList<CheckListDomain> listDomains;
+    ArrayList<String> strings = new ArrayList<>();
 
     public static PlanChecklist newInstance() {
         return new PlanChecklist();
@@ -50,15 +51,24 @@ public class PlanChecklist extends Fragment {
         recyclerView.setAdapter(listAdpater);
         recyclerView.setLayoutManager(layoutManager);
 
-        listDomains.add(new CheckListDomain("리스트1", true));
-        listDomains.add(new CheckListDomain("리스트2", true));
-        listDomains.add(new CheckListDomain("리스트3", true));
-        listDomains.add(new CheckListDomain("리스트4", true));
-        listDomains.add(new CheckListDomain("리스트5", false));
-        listDomains.add(new CheckListDomain("리스트6", true));
-        listDomains.add(new CheckListDomain("리스트7", true));
-        listDomains.add(new CheckListDomain("리스트8", true));
-        listDomains.add(new CheckListDomain("리스트9", true));
+        strings.add("텐트");
+        strings.add("조리도구");
+        strings.add("모기약");
+        strings.add("먹을거");
+        strings.add("마실거");
+        strings.add("캠핑의자");
+        strings.add("장작");
+        strings.add("캠프파이어키트");
+
+
+        listDomains.add(new CheckListDomain("텐트", true));
+        listDomains.add(new CheckListDomain("조리도구", true));
+        listDomains.add(new CheckListDomain("모기약", true));
+        listDomains.add(new CheckListDomain("먹을거", true));
+        listDomains.add(new CheckListDomain("마실거", false));
+        listDomains.add(new CheckListDomain("캠핑의자", true));
+        listDomains.add(new CheckListDomain("장작", true));
+        listDomains.add(new CheckListDomain("캠프파이어키트", true));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);
@@ -66,9 +76,9 @@ public class PlanChecklist extends Fragment {
             @Override
             public void onItemClick(View v, int pos) {
                 if (listDomains.get(pos).isStatus()){
-                    listDomains.set(pos, new CheckListDomain("리스트"+(pos+1), false));
+                    listDomains.set(pos, new CheckListDomain(strings.get(pos), false));
                 }else{
-                    listDomains.set(pos, new CheckListDomain("리스트"+(pos+1), true));
+                    listDomains.set(pos, new CheckListDomain(strings.get(pos), true));
                 }
                 listAdpater.notifyItemChanged(pos);
             }

@@ -51,24 +51,18 @@ public class PlanSearch extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
-        planDomains.add(new PlanDomain("계획2", "2022-03-08 ~ 2022-03-09"));
+        planDomains.add(new PlanDomain("오지투어", "2022-08-08 ~ 2022-08-09"));
+        planDomains.add(new PlanDomain("부산탐방", "2022-01-02 ~ 2022-01-03"));
+        planDomains.add(new PlanDomain("충주답사", "2022-09-05 ~ 2022-09-06"));
+        planDomains.add(new PlanDomain("강가캠핑", "2022-09-25 ~ 2022-09-26"));
+        planDomains.add(new PlanDomain("수학여행", "2022-10-10 ~ 2022-10-11"));
+        planDomains.add(new PlanDomain("계곡을 찾아서", "2022-11-11 ~ 2022-11-13"));
+        planDomains.add(new PlanDomain("산악투어", "2022-05-05 ~ 2022-05-06"));
+        planDomains.add(new PlanDomain("지리산캠핑", "2022-12-25 ~ 2022-12-26"));
+        planDomains.add(new PlanDomain("설악산장악", "2022-03-04 ~ 2022-03-09"));
+        planDomains.add(new PlanDomain("양산투어", "2022-04-04 ~ 2022-04-08"));
+        planDomains.add(new PlanDomain("강원도 오지 캠핑", "2022-07-07 ~ 2022-07-08"));
+        planDomains.add(new PlanDomain("몸만 가는 캠핑", "2022-01-30 ~ 2022-02-01"));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);
