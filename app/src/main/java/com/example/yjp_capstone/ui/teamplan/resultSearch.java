@@ -47,7 +47,9 @@ public class resultSearch extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
-        planDomains.add(new PlanDomain("계획1", "2022-03-08 ~ 2022-03-09"));
+        planDomains.add(new PlanDomain("오지투어", "2022-08-08 ~ 2022-08-09"));
+        planDomains.add(new PlanDomain("산악투어", "2022-05-05 ~ 2022-05-06"));
+        planDomains.add(new PlanDomain("양산투어", "2022-04-04 ~ 2022-04-08"));
 
         RecyclerDecoration spaceDecoration = new RecyclerDecoration(80);
         recyclerView.addItemDecoration(spaceDecoration);

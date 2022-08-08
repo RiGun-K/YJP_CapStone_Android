@@ -61,7 +61,7 @@
             android:layout_width="121dp"
             android:layout_height="40dp"
             android:layout_marginStart="48dp"
-            android:text="aaaa"
+            android:text="Roger"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintStart_toStartOf="@+id/view"
