@@ -16,7 +16,7 @@ import com.example.yjp_capstone.databinding.FragmentMyPageBinding;
 import com.example.yjp_capstone.viewmodel.MyPageViewModel;
 
 public class MyPageFragment extends Fragment {
-    private FragmentMyPageBinding                                                                                                                                                               binding;
+    private FragmentMyPageBinding binding;
     private MyPageViewModel mViewModel;
 
     public static MyPageFragment newInstance() {
@@ -42,6 +42,9 @@ public class MyPageFragment extends Fragment {
         });
         binding.view10.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myBoxFragment);
+        });
+        binding.reservationGo.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_myPageFragment_to_myReservationFragment);
         });
     }
 

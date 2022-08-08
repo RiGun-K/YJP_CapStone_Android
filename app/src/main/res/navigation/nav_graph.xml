@@ -37,12 +37,16 @@
         <action
             android:id="@+id/action_myPageFragment_to_myBoxFragment"
             app:destination="@id/myBoxFragment" />
+
         <action
             android:id="@+id/action_myPageFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
         <action
             android:id="@+id/action_myPageFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_myPageFragment_to_myReservationFragment"
+            app:destination="@id/myReservationFragment" />
     </fragment>
     <fragment
         android:id="@+id/myBoxFragment"
@@ -55,6 +59,18 @@
         <action
             android:id="@+id/action_myBoxFragment_to_myBoxMenuFragment"
             app:destination="@id/myBoxMenuFragment" />
+        <action
+            android:id="@+id/action_myBoxFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myReservationFragment"
+        android:name="com.example.yjp_capstone.ui.MyReservationFragment"
+        android:label="fragment_my_reservation"
+        tools:layout="@layout/fragment_my_reservation" >
+        <action
+            android:id="@+id/action_myBoxFragment_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
         <action
             android:id="@+id/action_myBoxFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -100,6 +116,9 @@
         <action
             android:id="@+id/action_planFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planAddSelect"
@@ -115,6 +134,9 @@
         <action
             android:id="@+id/action_planAddSelect_to_sideMenuFragment2"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planAddSelect_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planChecklist"
@@ -124,6 +146,9 @@
         <action
             android:id="@+id/action_planChecklist_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planChecklist_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planDetail"
@@ -133,6 +158,9 @@
         <action
             android:id="@+id/action_planDetail_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planDetail_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planMenu"
@@ -148,6 +176,9 @@
         <action
             android:id="@+id/action_planMenu_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planMenu_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/planSearch"
@@ -155,11 +186,17 @@
         android:label="fragment_plan_search"
         tools:layout="@layout/fragment_plan_search" >
         <action
-            android:id="@+id/action_planSearch_to_planDetail"
-            app:destination="@id/planDetail" />
-        <action
             android:id="@+id/action_planSearch_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_planSearch_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_planSearch_to_resultSearch"
+            app:destination="@id/resultSearch" />
+        <action
+            android:id="@+id/action_planSearch_to_resultPlanMenu"
+            app:destination="@id/resultPlanMenu" />
     </fragment>
     <fragment
         android:id="@+id/teamMenu"
@@ -175,6 +212,9 @@
         <action
             android:id="@+id/action_teamMenu_to_sideMenuFragment2"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_teamMenu_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/teamFragment"
@@ -187,5 +227,50 @@
         <action
             android:id="@+id/action_teamFragment_to_sideMenuFragment"
             app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_teamFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultSearch"
+        android:name="com.example.yjp_capstone.ui.teamplan.resultSearch"
+        android:label="fragment_result_search"
+        tools:layout="@layout/fragment_result_search" >
+        <action
+            android:id="@+id/action_resultSearch_to_sideMenuFragment2"
+            app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_resultSearch_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_resultSearch_to_resultPlanMenu"
+            app:destination="@id/resultPlanMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultPlanMenu"
+        android:name="com.example.yjp_capstone.ui.teamplan.resultPlanMenu"
+        android:label="fragment_result_plan_menu"
+        tools:layout="@layout/fragment_result_plan_menu" >
+        <action
+            android:id="@+id/action_resultPlanMenu_to_resultPlanDetail"
+            app:destination="@id/resultPlanDetail" />
+        <action
+            android:id="@+id/action_resultPlanMenu_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_resultPlanMenu_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultPlanDetail"
+        android:name="com.example.yjp_capstone.ui.teamplan.resultPlanDetail"
+        android:label="fragment_result_plan_detail"
+        tools:layout="@layout/fragment_result_plan_detail" >
+        <action
+            android:id="@+id/action_resultPlanDetail_to_sideMenuFragment"
+            app:destination="@id/sideMenuFragment" />
+        <action
+            android:id="@+id/action_resultPlanDetail_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

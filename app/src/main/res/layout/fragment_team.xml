@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.teamplan.TeamFragment">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -58,7 +59,7 @@
             android:id="@+id/teamText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MyTeam"
+            android:text="나의 팀목록"
             android:textColor="@color/black"
             android:textSize="10pt"
             app:layout_constraintBottom_toTopOf="@+id/plan"
@@ -70,11 +71,26 @@
             android:id="@+id/teamAddBtn"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
             android:text="+"
             app:layout_constraintBottom_toTopOf="@+id/plan"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintVertical_bias="1.0"
-            tools:layout_editor_absoluteX="110dp" />
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/teamItemList"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plan" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

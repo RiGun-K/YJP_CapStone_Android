@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ui.teamplan.TeamItemFragment">
 
 
@@ -14,10 +14,13 @@
 
         <TextView
             android:id="@+id/teamItemLayoutText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
             android:text="팀 이름이 들어간다"
             android:textSize="12pt"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

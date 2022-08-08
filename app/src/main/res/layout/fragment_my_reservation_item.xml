@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.MyReservationItemFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/teamItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/reservationItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="25dp"
+                android:text="캠핑장 명"
+                android:textColor="@color/black"
+                android:textSize="12pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.085" />
+
+            <Button
+                android:id="@+id/reservationItemButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="25dp"
+                android:text="상세조회"
+                android:background="@drawable/button_background"
+                app:backgroundTint="@null"
+                android:textColor="@color/black"
+                android:textSize="6pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.085" />
+
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="285dp"
+            android:layout_marginTop="90dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/campingImage"
+                android:layout_width="415dp"
+                android:layout_height="186dp"
+                android:layout_weight="1"
+                android:src="@drawable/gogo"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="76dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reservationPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="인원"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reservationCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="요금"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reservationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="날짜"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
