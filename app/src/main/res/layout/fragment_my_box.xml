@@ -69,17 +69,48 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/useboxlist"
-            android:layout_width="408dp"
-            android:layout_height="493dp"
+        <View
+            android:id="@+id/L1"
+            android:layout_width="399dp"
+            android:layout_height="96dp"
             android:layout_marginTop="96dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#80FDF0CA"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-            app:layout_constraintVertical_bias="0.037" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="000보관함 L1"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintStart_toStartOf="@+id/L1"
+            app:layout_constraintTop_toTopOf="@+id/L1"
+            app:layout_constraintVertical_bias="0.493" />
+
+        <View
+            android:id="@+id/L3"
+            android:layout_width="399dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="204dp"
+            android:background="#80FDF0CA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="000보관함 L3"
+            app:layout_constraintBottom_toBottomOf="@+id/L3"
+            app:layout_constraintStart_toStartOf="@+id/L3"
+            app:layout_constraintTop_toTopOf="@+id/L3"
+            app:layout_constraintVertical_bias="0.532" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

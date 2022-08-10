@@ -34,7 +34,7 @@ public class MyBoxViewModel extends ViewModel {
     ApiController apiController = retrofit.create(ApiController.class);
 
     public List<UseBoxDAO> getUseBox() {
-        List<UseBoxDAO> useBox = new ArrayList<>();
+        List<UseBoxDAO> useBox = new ArrayList<UseBoxDAO>();
         apiController.getUseBoxList("2").enqueue(new Callback<List<Map<String, Object>>>() {
             @Override
             public void onResponse(Call<List<Map<String, Object>>> call, Response<List<Map<String, Object>>> response) {
@@ -57,6 +57,7 @@ public class MyBoxViewModel extends ViewModel {
                         useBox.add(boxDAO);
                     }
                 }
+                Log.d("ccc", "aa"+String.valueOf(useBox.size()));
             }
 
             @Override
@@ -65,6 +66,7 @@ public class MyBoxViewModel extends ViewModel {
                 Log.d("bbb","fail");
             }
         });
+
         return useBox;
     }
 
